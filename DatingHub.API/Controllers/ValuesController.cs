@@ -21,6 +21,7 @@ namespace DatingHub.API.Controllers
             _context = context;
 
         }
+        [AllowAnonymous]
         // GET api/values
         [HttpGet]
         //The IActionResult class allows us to return HTTP requests instead of strings
@@ -34,6 +35,7 @@ namespace DatingHub.API.Controllers
             return Ok(values);
         }
 
+        [AllowAnonymous]
         // GET api/values/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetValue(int id)
