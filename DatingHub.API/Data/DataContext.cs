@@ -12,5 +12,6 @@ namespace DatingHub.API.Data
         //We need to tell the entity framework about this class. We need to give this class some properties
         public DbSet<Value> Values { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Photo> Photos  {get; set;}
     }
 }
